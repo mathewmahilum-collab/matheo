@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Woman of Faces by Celeste</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: "Georgia", serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Full-page droplet background */
+    .droplets {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .drop {
+      position: absolute;
+      width: 4px;
+      height: 30px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 50%;
+      filter: blur(1px);
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      from { transform: translateY(-100px); opacity: 0.8; }
+      to { transform: translateY(110vh); opacity: 0; }
+    }
+
+    /* Portrait in middle */
+    .portrait-box {
+      position: relative;
+      width: 100vw;
+      flex: 1;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 1em;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.5);
+      text-align: justify;
+      padding: 0 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      mix-blend-mode: lighten;
+    }
+
+    .portrait {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.6) brightness(1.05) sepia(0.2);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* Spotify below portrait */
+    .audio-player {
+      width: 100%;
+      max-width: 560px;
+      margin: 15px 0;
+      z-index: 1;
+    }
+
+    /* Glowing title at bottom */
+    h1 {
+      color: #fff;
+      font-size: 42px;
+      text-align: center;
+      margin: 20px 0;
+      z-index: 1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ccc, 0 0 30px #999;
+    }
+  </style>
+</head>
+<body>
+  <!-- Droplet background filling entire page -->
+  <div class="droplets">
+    <div class="drop" style="left:5%; animation-duration:3s; height:25px; width:3px; filter:blur(0.5px);"></div>
+    <div class="drop" style="left:15%; animation-duration:4s; height:35px; width:4px; filter:blur(1px);"></div>
+    <div class="drop" style="left:30%; animation-duration:2.5s; height:20px; width:2px; filter:blur(0.8px);"></div>
+    <div class="drop" style="left:45%; animation-duration:3.2s; height:40px; width:5px; filter:blur(1.2px);"></div>
+    <div class="drop" style="left:60%; animation-duration:4.5s; height:30px; width:3px; filter:blur(0.7px);"></div>
+    <div class="drop" style="left:75%; animation-duration:2.8s; height:25px; width:3px; filter:blur(1px);"></div>
+    <div class="drop" style="left:90%; animation-duration:3.7s; height:35px; width:4px; filter:blur(1.3px);"></div>
+  </div>
+
+  <!-- Portrait box -->
+  <div class="portrait-box">
+    <div class="text-layer">
+      Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside your glow and the moon envies your light, my heart beats only for you and my soul belongs to your love, through storms I’ll hold you and through nights I’ll guide you, in shadows I’ll find you and in dawn I’ll cherish you, you are my poetry, you are my song, you are my forever, you are my home, love eternal and love divine, written in whispers across time, painted in black and white, a portrait of endless devotion, a canvas of words and light, my face, my soul, my heart, all filled with you Love whispers through the silence, your smile lights the darkest night, in every heartbeat I find you, forever etched in black and white, my soul dances with your presence, endless devotion and timeless embrace, words fall short but linger true, you are my eternal grace, I dream of your laughter and breathe in your warmth, every glance a universe, every touch a promise, the stars pale beside you
+    </div>
+
+    <img src="photo.png" alt="My Portrait" class="portrait">
+  </div>
+
+  <!-- Spotify embed below portrait -->
+  <div class="audio-player">
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/1uJKkC2V6jATojfumZCuAb?utm_source=generator" 
+      width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+
+  <!-- Glowing title at the very bottom -->
+  <h1>My Portrait</h1>
+</body>
+</html>
